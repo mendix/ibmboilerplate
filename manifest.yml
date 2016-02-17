@@ -1,0 +1,14 @@
+---
+declared-services: 
+  mendix-db: 
+    label: elephantsql 
+    plan: turtle 
+applications:
+- path: MendixStarter_1.0.0.6.mda
+  memory: 756M
+  instances: 1
+  domain: mybluemix.net
+  name: mendixStarter
+  host: mendixStarter
+  services:
+  - mendix-db
