@@ -10,5 +10,9 @@ applications:
   domain: mybluemix.net
   name: mendixStarter
   host: mendixStarter
+  buildpack: https://github.com/mendix/cf-mendix-buildpack
+  env:
+    ADMIN_PASSWORD: passw0rd
+    DEVELOPMENT_MODE: true
   services:
   - mendix-db
